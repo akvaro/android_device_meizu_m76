@@ -1,0 +1,52 @@
+USE_CAMERA_STUB := true
+
+# inherit from the proprietary version
+-include vendor/meizu/mx4pro/BoardConfigVendor.mk
+
+TARGET_ARCH := arm
+TARGET_NO_BOOTLOADER := true
+TARGET_BOARD_PLATFORM := exynos5
+TARGET_CPU_ABI := armeabi-v7a
+TARGET_CPU_ABI2 := armeabi
+TARGET_ARCH_VARIANT := armv7-a-neon
+TARGET_CPU_VARIANT := cortex-a15
+TARGET_SLSI_VARIANT := insignal
+TARGET_SOC := exynos5430
+TARGET_CPU_SMP := true
+ARCH_ARM_HAVE_TLS_REGISTER := true
+ANDROID_COMMON_BUILD_MK = true
+
+TARGET_BOOTLOADER_BOARD_NAME := m76
+#TARGET_GCC_VERSION_EXP := 4.9
+#TARGET_GLOBAL_CFLAGS += -mcpu=cortex-a53 -mfpu=neon -mrestrict-it -mfloat-abi=softfp
+#TARGET_GLOBAL_CPPFLAGS += -mfpu=neon -mrestrict-it -mfloat-abi=softfp
+
+TARGET_PREBUILT_KERNEL := device/meizu/mx4pro/kernel
+BOARD_KERNEL_CMDLINE := 
+BOARD_KERNEL_BASE := 0x26000000
+BOARD_KERNEL_PAGESIZE := 2048
+BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x26000000 --tags_offset 0x00000100 --dt device/meizu/mx4pro/dt.img
+KERNEL_EXFAT_MODULE_NAME := "exfat"
+#KERNEL_NTFS_MODULE_NAME := "ntfs"
+
+#Recovery
+#TARGET_RECOVERY_FSTAB := device/meizu/mx4pro/recovery.fstab
+#RECOVERY_FSTAB_VERSION := 2
+
+#TWRP
+RECOVERY_SDCARD_ON_DATA := true
+TW_NO_REBOOT_BOOTLOADER := true
+DEVICE_RESOLUTION := 1080x1920
+TW_MAX_BRIGHTNESS := 1680
+PRODUCT_COPY_FILES += device/meizu/mx4pro/twrp.fstab:recovery/root/etc/twrp.fstab
+
+TARGET_USERIMAGES_USE_EXT4 := true
+BOARD_BOOTIMAGE_PARTITION_SIZE := 0x105c0000
+BOARD_RECOVERYIMAGE_PARTITION_SIZE := 0x105c0000
+BOARD_SYSTEMIMAGE_PARTITION_SIZE := 0x105c0000
+BOARD_USERDATAIMAGE_PARTITION_SIZE := 0x105c0000
+BOARD_FLASH_BLOCK_SIZE := 131072
+
+# Assert
+TARGET_OTA_ASSERT_DEVICE := mx4pro,m76
+
