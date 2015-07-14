@@ -1,0 +1,4 @@
+#
+# system.prop for mx4 pro
+#
+ro.sf.lcd_density=640

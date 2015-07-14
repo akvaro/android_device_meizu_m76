@@ -13,7 +13,8 @@
 # limitations under the License.
 
 $(call inherit-product, vendor/omni/config/common.mk)
-
+$(call inherit-product, vendor/omni/config/gsm.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 $(call inherit-product, device/common/gps/gps_us_supl.mk)
 
 PRODUCT_NAME := omni_mx4pro
@@ -22,3 +23,4 @@ PRODUCT_BRAND := meizu
 PRODUCT_MANUFACTURER := Meizu
 PRODUCT_MODEL := mx4pro
 
+$(call inherit-product-if-exists, vendor/meizu/mx4pro/mx4pro-vendor.mk)
