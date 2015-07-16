@@ -23,4 +23,4 @@ PRODUCT_BRAND := meizu
 PRODUCT_MANUFACTURER := Meizu
 PRODUCT_MODEL := mx4pro
 
-$(call inherit-product-if-exists, vendor/meizu/mx4pro/mx4pro-vendor.mk)
+$(call inherit-product-if-exists, vendor/meizu/mx4pro/device-vendor.mk)

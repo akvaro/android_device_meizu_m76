@@ -24,11 +24,9 @@ etc/firmware/fw_bcmdhd_wls.bin
 etc/firmware/fw_mfgtest.bin
 bin/setup_fs
 bin/mcDriverDaemon
-bin/brcm_patchram_plus
 bin/board_info
 bin/mrvl_diag
 bin/log_test
-bin/flymed
 bin/cploadserver
 bin/nvmserver
 bin/eeh_server
@@ -101,7 +99,6 @@ lib/omx/libOMX.Exynos.VP8.Encoder.so
 lib/omx/libOMX.Exynos.WMV.Decoder.so
 lib/libaudioflingerMz.so
 lib/libaudioresamplerMz.so
-lib/libblur.so
 lib/libcaFingerPrintShared.so
 lib/libcfgdevparam.so
 lib/libclcore.bc
@@ -123,8 +120,7 @@ lib/libfilterpack_imageproc.so
 lib/libfimg.so
 lib/libfp_client.so
 lib/libfpservice.so
-lib/libgdmvprov.so
-lib/libGLES3.so
+lib/libgdmcprov.so
 lib/libhwcutilsmodule.so
 lib/libhwcutils.so
 lib/libhwjpeg.so
