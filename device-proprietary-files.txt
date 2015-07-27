@@ -104,14 +104,11 @@ lib/libfp_client.so
 lib/libfpservice.so
 lib/libgdmcprov.so
 lib/libhdmimodule.so
-lib/libhdmimodule.so
-lib/libhdmi.so
 lib/libhdmi.so
 lib/libhwcutilsmodule.so
 lib/libhwcutils.so
 lib/libhwjpeg.so
 lib/libImmVibeJ.so
-lib/libion_exynos.so
 lib/libion_exynos.so
 lib/libion.so
 lib/libipc_pref.527.1.so
@@ -138,12 +135,7 @@ lib/libskia_hw_interface.so
 lib/libskia_private.so
 lib/libsoundpool.so
 lib/libsoundtriggerservice.so
-lib/libstagefright_amrnb_common.so
-lib/libstagefright_httplive.so
 lib/libstagefrighthw.so
-lib/libstagefright_mzhttplive.so
-lib/libstagefright_mzmpeg2ts.so
-lib/libstagefright_wfd.so
 lib/libtfa9890.so
 lib/libvirtualdisplaymodule.so
 lib/libvirtualdisplay.so
