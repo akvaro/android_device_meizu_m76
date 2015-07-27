@@ -43,9 +43,6 @@ etc/firmware/Skylark_LTG.bin
 etc/firmware/Skylark_LWG.bin
 etc/libnfc-brcm.conf
 etc/libnfc-nxp.conf
-etc/media_codecs.xml
-etc/media_profiles.xml
-etc/mixer_paths.xml
 etc/mrvl_tel_at_def.cfg
 etc/mrvl_tel_diag_def.cfg
 etc/mrvl_tel_eeh_def.cfg
