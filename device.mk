@@ -1,3 +1,5 @@
+#
+# Copyright (C) 2014 The Android Open-Source Project
 # Copyright (C) 2015 Tatsuyuki Ishi
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -11,17 +13,6 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+#
+DEVICE_PACKAGE_OVERLAYS := device/meizu/mx4pro/overlay
 
-$(call inherit-product, vendor/omni/config/common.mk)
-$(call inherit-product, vendor/omni/config/gsm.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
-$(call inherit-product, device/common/gps/gps_us_supl.mk)
-$(call inherit-product, device/meizu/mx4pro/device.mk)
-
-PRODUCT_NAME := omni_mx4pro
-PRODUCT_DEVICE := mx4pro
-PRODUCT_BRAND := meizu
-PRODUCT_MANUFACTURER := Meizu
-PRODUCT_MODEL := mx4pro
-
-$(call inherit-product-if-exists, vendor/meizu/mx4pro/device-vendor.mk)

@@ -17,12 +17,6 @@ bin/rild
 bin/setup_fs
 bin/simal
 etc/clatd.conf
-etc/firmware/audience/cvqmodels/adnc_cvq_detection_bkg.bin
-etc/firmware/audience/cvqmodels/adnc_cvq_detection_bkg_w_hdrs.bin
-etc/firmware/audience/cvqmodels/adnc_cvq_training_bkg.bin
-etc/firmware/audience/cvqmodels/oemkw_NihaoMeizu.bin
-etc/firmware/audience/es705/audience-es705-fw.bin
-etc/firmware/audience/es705/audience-es705-vs.bin
 etc/firmware/BCM4335.hcd
 etc/firmware/fw_bcmdhd_apsta.bin
 etc/firmware/fw_bcmdhd.bin
