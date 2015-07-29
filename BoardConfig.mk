@@ -20,6 +20,17 @@ TARGET_USE_QCOM_BIONIC_OPTIMIZATION := true
 BOARD_EGL_CFG := device/meizu/mx4pro/egl.cfg
 BOARD_USES_ALSA_AUDIO := true
 
+#WiFi
+WPA_SUPPLICANT_VERSION      := VER_0_8_X
+BOARD_WLAN_DEVICE           := bcmdhd
+BOARD_WPA_SUPPLICANT_DRIVER := NL80211
+BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_$(BOARD_WLAN_DEVICE)
+BOARD_HOSTAPD_DRIVER        := NL80211
+BOARD_HOSTAPD_PRIVATE_LIB   := lib_driver_cmd_$(BOARD_WLAN_DEVICE)
+WIFI_DRIVER_FW_PATH_PARAM   := "/sys/module/bcmdhd/parameters/firmware_path"
+WIFI_DRIVER_FW_PATH_AP      := "/etc/firmware/fw_bcmdhd_apsta.bin"
+WIFI_DRIVER_FW_PATH_STA     := "/etc/firmware/fw_bcmdhd.bin"
+
 TARGET_BOOTLOADER_BOARD_NAME := m76
 TARGET_BOARD_INFO_FILE := device/meizu/mx4pro/board-info.txt
 
@@ -30,13 +41,13 @@ BOARD_KERNEL_BASE := 0x26000000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x26000000 --tags_offset 0x00000100 --dt device/meizu/mx4pro/dt.img
 KERNEL_EXFAT_MODULE_NAME := "exfat"
-#KERNEL_NTFS_MODULE_NAME := "ntfs"
 
 #Recovery
 #TARGET_RECOVERY_FSTAB := device/meizu/mx4pro/recovery.fstab
 #RECOVERY_FSTAB_VERSION := 2
 
 TARGET_BOOTANIMATION_SIZE := 2560x1440
+
 #TWRP
 RECOVERY_SDCARD_ON_DATA := true
 TW_NO_REBOOT_BOOTLOADER := true
