@@ -204,3 +204,5 @@ vendor/lib/libmalicore.bc
 vendor/lib/libRSDriverArm.so
 vendor/lib/libsfb_hal.so
 vendor/lib/mediadrm/libdrmclearkeyplugin.so
+lib/libmeizucamera.so
+lib/libvcm.so
