@@ -18,3 +18,15 @@ DEVICE_PACKAGE_OVERLAYS := device/meizu/mx4pro/overlay
 
 PRODUCT_PROPERTY_OVERRIDES += \
     rild.libpath=/system/lib/libmarvell-ril.so
+
+PRODUCT_PACKAGES := \
+    libwpa_client \
+    hostapd \
+    dhcpcd.conf \
+    wpa_supplicant \
+    wpa_supplicant.conf
+
+$(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/firmware/bcm4335/device-bcm.mk)
+
+PRODUCT_PACKAGES += \
+    lights.m76

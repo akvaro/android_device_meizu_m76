@@ -1,4 +1,3 @@
-
 app/mcRegistry/05010000000000000000000000000000.tlbin
 app/mcRegistry/05020000000000000000000000000000.tabin
 app/mcRegistry/ffffffffffff00000000000000000001.tabin
@@ -48,13 +47,8 @@ etc/mrvl_tel_eeh_def.cfg
 etc/mrvl_tel_modemmonitor_def.cfg
 etc/mrvl_tel_nvmserver_def.cfg
 etc/mtconfig.ini
-etc/nfcee_access.xml
-etc/nfcscc_access.xml
-etc/nfcse_access.xml
 etc/nvm_uncheck_file.cfg
 etc/recovery-resource.dat
-etc/security/mac_permissions.xml
-etc/security/otacerts.zip
 etc/tfa98xx/coldboot.patch
 etc/tfa98xx/music_eq_0.eq
 etc/tfa98xx/music_eq_1.eq
@@ -70,18 +64,9 @@ etc/tfa98xx/TFA9890_N1C3_2_1_1.patch
 etc/TTPCom_NRAM2_ABMM_WRITEABLE_DATA_CUC.gki
 etc/TTPCom_NRAM2_ABMM_WRITEABLE_DATA.gki
 etc/wifi/bcmdhd.cal
-etc/wifi/p2p_supplicant_overlay.conf
-etc/wifi/wpa_supplicant.conf
-etc/wifi/wpa_supplicant_overlay.conf
-lib/hw/audio.primary.m76.so
-lib/hw/camera.m76.so
 lib/hw/gralloc.exynos5.so
 lib/hw/hwcomposer.exynos5.so
-lib/hw/lights.m76.so
 lib/hw/memtrack.exynos5.so
-lib/hw/sensors.m76.so
-lib/libaudioflingerMz.so
-lib/libaudioresamplerMz.so
 lib/libcaFingerPrintShared.so
 lib/libcfgdevparam.so
 lib/libclcore.bc
