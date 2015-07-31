@@ -87,6 +87,7 @@ lib/libcfgdevparam.so
 lib/libclcore.bc
 lib/libclcore_debug.bc
 lib/libclcore_neon.bc
+lib/libcsc.so
 lib/libdce-1.1.2-mfr.so
 lib/libDClient.so
 lib/libDiracAPI_SHARED.so
@@ -124,6 +125,7 @@ lib/libmarvell-ril.so
 lib/libMcClient.so
 lib/libmcode_image.so
 lib/libMcRegistry.so
+lib/libmeizucamera.so
 lib/libmpp.so
 lib/libmsc.so
 lib/libnfc_nci_jni.so
@@ -145,6 +147,7 @@ lib/libsoundpool.so
 lib/libsoundtriggerservice.so
 lib/libstagefrighthw.so
 lib/libtfa9890.so
+lib/libvcm.so
 lib/libvirtualdisplaymodule.so
 lib/libvirtualdisplay.so
 lib/omx/libOMX.Exynos.AAC.Decoder.so
@@ -204,5 +207,3 @@ vendor/lib/libmalicore.bc
 vendor/lib/libRSDriverArm.so
 vendor/lib/libsfb_hal.so
 vendor/lib/mediadrm/libdrmclearkeyplugin.so
-lib/libmeizucamera.so
-lib/libvcm.so
