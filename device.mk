@@ -19,6 +19,9 @@ DEVICE_PACKAGE_OVERLAYS := device/meizu/mx4pro/overlay
 PRODUCT_PROPERTY_OVERRIDES += \
     rild.libpath=/system/lib/libmarvell-ril.so
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    wifi.interface=wlan0
+
 PRODUCT_PACKAGES := \
     libwpa_client \
     hostapd \

@@ -19,6 +19,8 @@ TARGET_USE_QCOM_BIONIC_OPTIMIZATION := true
 
 BOARD_EGL_CFG := device/meizu/mx4pro/egl.cfg
 BOARD_USES_ALSA_AUDIO := true
+MAX_EGL_CACHE_KEY_SIZE := 12*1024
+MAX_EGL_CACHE_SIZE := 2048*1024
 
 #WiFi
 WPA_SUPPLICANT_VERSION      := VER_0_8_X
@@ -30,6 +32,9 @@ BOARD_HOSTAPD_PRIVATE_LIB   := lib_driver_cmd_$(BOARD_WLAN_DEVICE)
 WIFI_DRIVER_FW_PATH_PARAM   := "/sys/module/bcmdhd/parameters/firmware_path"
 WIFI_DRIVER_FW_PATH_AP      := "/etc/firmware/fw_bcmdhd_apsta.bin"
 WIFI_DRIVER_FW_PATH_STA     := "/etc/firmware/fw_bcmdhd.bin"
+
+#Bluetooth
+BOARD_HAVE_BLUETOOTH := true
 
 TARGET_BOOTLOADER_BOARD_NAME := m76
 TARGET_BOARD_INFO_FILE := device/meizu/mx4pro/board-info.txt

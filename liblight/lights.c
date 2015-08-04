@@ -26,6 +26,7 @@
 #include <errno.h>
 #include <fcntl.h>
 #include <pthread.h>
+#include <stdlib.h>
 
 #include <sys/ioctl.h>
 #include <sys/types.h>
@@ -95,7 +96,7 @@ get_max_brightness_lcd() {
 
     if ((fd = open(LCD_FILE_MAX, O_RDONLY)) < 0) {
         ALOGE("[%s]: Could not open max brightness file %s: %s", __FUNCTION__,
-                     MAX_BRIGHTNESS_FILE, strerror(errno));
+                     LCD_FILE_MAX, strerror(errno));
         ALOGE("[%s]: Assume max brightness 255", __FUNCTION__);
         return 255;
     }
@@ -156,10 +157,6 @@ static int open_lights(const struct hw_module_t* module, char const* name,
 
     if (0 == strcmp(LIGHT_ID_BACKLIGHT, name))
         set_light = set_light_backlight;
-    else if (0 == strcmp(LIGHT_ID_NOTIFICATIONS, name))
-        set_light = set_light_notifications;
-    else if (0 == strcmp(LIGHT_ID_BATTERY, name))
-        set_light = set_light_battery;
     else
         return -EINVAL;
 
