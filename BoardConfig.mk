@@ -49,8 +49,8 @@ BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x26000000 --tags_offset 0x00000100 --d
 KERNEL_EXFAT_MODULE_NAME := "exfat"
 
 #Recovery
-#TARGET_RECOVERY_FSTAB := device/meizu/mx4pro/recovery.fstab
-#RECOVERY_FSTAB_VERSION := 2
+TARGET_RECOVERY_FSTAB := device/meizu/mx4pro/recovery.fstab
+RECOVERY_FSTAB_VERSION := 2
 
 TARGET_BOOTANIMATION_SIZE := 2560x1440
 
