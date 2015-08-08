@@ -99,6 +99,7 @@ lib/libmcode_image.so
 lib/libMcRegistry.so
 lib/libmpp.so
 lib/libmsc.so
+lib/libmtel.so
 lib/libp61-jcop-kit.so
 lib/libp61_spi_jni.so
 lib/libp61-spi.so
