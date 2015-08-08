@@ -91,6 +91,7 @@ lib/libhwcutilsmodule.so
 lib/libhwcutils.so
 lib/libhwjpeg.so
 lib/libImmVibeJ.so
+lib/libion.so
 lib/libion_exynos.so
 lib/libipc_pref.527.1.so
 lib/libmarvell-ril.so
