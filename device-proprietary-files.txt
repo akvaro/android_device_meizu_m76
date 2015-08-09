@@ -127,8 +127,6 @@ lib/omx/libOMX.Exynos.MPEG4.Encoder.so
 lib/omx/libOMX.Exynos.VP8.Decoder.so
 lib/omx/libOMX.Exynos.VP8.Encoder.so
 lib/omx/libOMX.Exynos.WMV.Decoder.so
-usr/keylayout/gpio-keys.kl
-usr/keylayout/synaptics_dsx.kl
 vendor/etc/diracmobile.config
 vendor/etc/dirac_types.xml
 vendor/firmware/73BIEB1.img
