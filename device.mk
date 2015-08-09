@@ -37,3 +37,11 @@ PRODUCT_PACKAGES += \
 # Keylayouts
 PRODUCT_COPY_FILES += \
     device/meizu/mx4pro/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl
+
+# Audio
+PRODUCT_COPY_FILES += \
+    device/meizu/mx4pro/audio_effects.conf:system/etc/audio_effects.conf \
+    device/meizu/mx4pro/audio_policy.conf:system/etc/audio_policy.conf \
+    device/meizu/mx4pro/mixer_paths.xml:system/etc/mixer_paths.xml \
+    device/meizu/mx4pro/media_codecs.xml:system/etc/media_codecs.xml \
+    device/meizu/mx4pro/media_profiles.xml:system/etc/media_profiles.xml
