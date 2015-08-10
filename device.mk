@@ -32,7 +32,13 @@ PRODUCT_PACKAGES := \
 $(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/firmware/bcm4335/device-bcm.mk)
 
 PRODUCT_PACKAGES += \
+    Nfc
+
+PRODUCT_PACKAGES += \
     lights.m76
+
+PRODUCT_PACKAGES += \
+    setup_fs
 
 PRODUCT_PACKAGES += \
     clatd \
