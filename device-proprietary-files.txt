@@ -91,8 +91,8 @@ lib/libhwcutilsmodule.so
 lib/libhwcutils.so
 lib/libhwjpeg.so
 lib/libImmVibeJ.so
-lib/libion.so
 lib/libion_exynos.so
+lib/libion.so
 lib/libipc_pref.527.1.so
 lib/libmarvell-ril.so
 lib/libMcClient.so
@@ -107,6 +107,7 @@ lib/libp61-spi.so
 lib/libPerfScheduler.so
 lib/libpparam.so
 lib/libRefocusModule.so
+lib/libril.so
 lib/libsimal.so
 lib/libskia_hw_interface.so
 lib/libskia_private.so
