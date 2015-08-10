@@ -34,6 +34,10 @@ $(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/firmware/bcm4335
 PRODUCT_PACKAGES += \
     lights.m76
 
+PRODUCT_PACKAGES += \
+    clatd \
+    clatd.conf
+
 # Keylayouts
 PRODUCT_COPY_FILES += \
     device/meizu/mx4pro/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl
