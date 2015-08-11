@@ -31,8 +31,18 @@ PRODUCT_PACKAGES := \
 
 $(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/firmware/bcm4335/device-bcm.mk)
 
+# NFC
 PRODUCT_PACKAGES += \
-    Nfc
+    Nfc \
+    NfcNci \
+    Tag \
+    nfc_nci.pn54x.default
+    
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.nfc.xml:system/etc/permissions/android.hardware.nfc.xml \
+    frameworks/native/data/etc/android.hardware.nfc.hce.xml:system/etc/permissions/android.hardware.nfc.hce.xml \
+    device/meizu/mx4pro/libnfc-brcm.conf:system/etc/libnfc-brcm.conf \
+    device/meizu/mx4pro/libnfc-nxp.conf:system/etc/libnfc-nxp.conf
 
 PRODUCT_PACKAGES += \
     lights.m76
