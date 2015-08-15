@@ -67,7 +67,6 @@ lib/libcfgdevparam.so
 lib/libcsc.so
 lib/libdce-1.1.2-mfr.so
 lib/libDClient.so
-lib/libDiracAPI_SHARED.so
 lib/libdisplaymodule.so
 lib/libdisplay.so
 lib/libearsmart.so
@@ -128,8 +127,6 @@ lib/omx/libOMX.Exynos.MPEG4.Encoder.so
 lib/omx/libOMX.Exynos.VP8.Decoder.so
 lib/omx/libOMX.Exynos.VP8.Encoder.so
 lib/omx/libOMX.Exynos.WMV.Decoder.so
-vendor/etc/diracmobile.config
-vendor/etc/dirac_types.xml
 vendor/firmware/73BIEB1.img
 vendor/firmware/73BIEBS1.img
 vendor/firmware/73TPKB1.img
@@ -166,7 +163,6 @@ vendor/firmware/TPK-TOL2W.img
 vendor/firmware/WTK-OGSB.img
 vendor/lib/egl/gpr_list.cfg
 vendor/lib/egl/libGLES_mali.so
-vendor/lib/libbt-vendor.so
 vendor/lib/libmalicore.bc
 vendor/lib/libRSDriverArm.so
 vendor/lib/libsfb_hal.so
