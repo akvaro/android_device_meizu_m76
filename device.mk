@@ -21,6 +21,9 @@ $(call inherit-product, frameworks/native/build/phone-xxhdpi-2048-dalvik-heap.mk
 $(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-2048-hwui-memory.mk)
 
 PRODUCT_PROPERTY_OVERRIDES += \
+    ro.opengles.version=196608
+
+PRODUCT_PROPERTY_OVERRIDES += \
     rild.libpath=/system/lib/libmarvell-ril.so
 
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -33,20 +36,24 @@ PRODUCT_PACKAGES := \
     wpa_supplicant \
     wpa_supplicant.conf
 
-$(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/firmware/bcm4335/device-bcm.mk)
+$(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/firmware/bcm4339/device-bcm.mk)
 
 # NFC
 PRODUCT_PACKAGES += \
     Nfc \
     NfcNci \
     Tag \
-    nfc_nci.pn54x.default
+    com.android.nfc_extras
     
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.nfc.xml:system/etc/permissions/android.hardware.nfc.xml \
     frameworks/native/data/etc/android.hardware.nfc.hce.xml:system/etc/permissions/android.hardware.nfc.hce.xml \
+    frameworks/base/nfc-extras/com.android.nfc_extras.xml:system/etc/permissions/com.android.nfc_extras.xml \
     device/meizu/mx4pro/libnfc-brcm.conf:system/etc/libnfc-brcm.conf \
-    device/meizu/mx4pro/libnfc-nxp.conf:system/etc/libnfc-nxp.conf
+    device/meizu/mx4pro/libnfc-nxp.conf:system/etc/libnfc-nxp.conf \
+    device/meizu/mx4pro/nfcee_access.xml:system/etc/nfcee_access.xml \
+    device/meizu/mx4pro/nfcse_access.xml:system/etc/nfcse_access.xml \
+    device/meizu/mx4pro/nfcscc_access.xml:system/etc/nfcscc_access.xml
 
 PRODUCT_PACKAGES += \
     lights.m76
@@ -64,7 +71,7 @@ PRODUCT_COPY_FILES += \
 
 # Audio
 PRODUCT_COPY_FILES += \
-    device/meizu/mx4pro/audio_effects.conf:system/etc/audio_effects.conf \
+    device/meizu/mx4pro/audio_effects.conf:system/vendor/etc/audio_effects.conf \
     device/meizu/mx4pro/audio_policy.conf:system/etc/audio_policy.conf \
     device/meizu/mx4pro/mixer_paths.xml:system/etc/mixer_paths.xml \
     device/meizu/mx4pro/media_codecs.xml:system/etc/media_codecs.xml \

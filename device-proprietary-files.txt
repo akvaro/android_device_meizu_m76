@@ -65,13 +65,9 @@ lib/hw/memtrack.exynos5.so
 lib/libcaFingerPrintShared.so
 lib/libcfgdevparam.so
 lib/libcsc.so
-lib/libdce-1.1.2-mfr.so
-lib/libDClient.so
 lib/libdisplaymodule.so
 lib/libdisplay.so
 lib/libearsmart.so
-lib/libeffects_filters.so
-lib/libeffects_mosaic.so
 lib/libexynoscamera.so
 lib/libexynosgscaler.so
 lib/libExynosHWCService.so
@@ -93,6 +89,7 @@ lib/libImmVibeJ.so
 lib/libion_exynos.so
 lib/libion.so
 lib/libipc_pref.527.1.so
+lib/libload_lib.so
 lib/libmarvell-ril.so
 lib/libMcClient.so
 lib/libmcode_image.so
@@ -100,12 +97,12 @@ lib/libMcRegistry.so
 lib/libmpp.so
 lib/libmsc.so
 lib/libmtel.so
+lib/libopencv_java.so
 lib/libp61-jcop-kit.so
 lib/libp61_spi_jni.so
 lib/libp61-spi.so
 lib/libPerfScheduler.so
 lib/libpparam.so
-lib/libRefocusModule.so
 lib/libril.so
 lib/libsimal.so
 lib/libskia_hw_interface.so
