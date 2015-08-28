@@ -6,6 +6,8 @@ bin/atserver_lite
 bin/board_info
 bin/cploadserver
 bin/eeh_server
+bin/gpsd
+bin/gpslogd
 bin/gxFpDaemon
 bin/immvibed
 bin/mcDriverDaemon
@@ -63,7 +65,6 @@ lib/hw/gralloc.exynos5.so
 lib/hw/hwcomposer.exynos5.so
 lib/hw/memtrack.exynos5.so
 lib/libcaFingerPrintShared.so
-lib/libcfgdevparam.so
 lib/libcsc.so
 lib/libdisplaymodule.so
 lib/libdisplay.so
@@ -88,7 +89,6 @@ lib/libhwjpeg.so
 lib/libImmVibeJ.so
 lib/libion_exynos.so
 lib/libion.so
-lib/libipc_pref.527.1.so
 lib/libload_lib.so
 lib/libmarvell-ril.so
 lib/libMcClient.so

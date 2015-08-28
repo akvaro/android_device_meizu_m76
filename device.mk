@@ -38,6 +38,15 @@ PRODUCT_PACKAGES := \
 
 $(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/firmware/bcm4339/device-bcm.mk)
 
+# GPS
+PRODUCT_PACKAGES += \
+    gps.default \
+    flp.default
+
+PRODUCT_COPY_FILES += \
+    device/meizu/mx4pro/gps.conf:system/etc/gps.conf \
+    device/meizu/mx4pro/gpsconfig.xml:system/etc/gpsconfig.xml
+
 # NFC
 PRODUCT_PACKAGES += \
     Nfc \
@@ -107,3 +116,4 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.bluetooth_le.xml:system/etc/permissions/android.hardware.bluetooth_le.xml \
     frameworks/native/data/etc/android.hardware.telephony.cdma.xml:system/etc/permissions/android.hardware.telephony.cdma.xml \
     frameworks/native/data/etc/android.hardware.ethernet.xml:system/etc/permissions/android.hardware.ethernet.xml
+s
