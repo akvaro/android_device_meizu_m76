@@ -23,9 +23,16 @@ $(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-2048-hwui
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.opengles.version=196608
 
+# Radio
 PRODUCT_PROPERTY_OVERRIDES += \
     rild.libpath=/system/lib/libmarvell-ril.so
 
+# LTE, CDMA, GSM/WCDMA
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.telephony.default_network=10 \
+    telephony.lteOnCdmaDevice=1
+
+# WiFi
 PRODUCT_PROPERTY_OVERRIDES += \
     wifi.interface=wlan0
 
