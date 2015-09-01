@@ -15,7 +15,6 @@
 $(call inherit-product, vendor/omni/config/common.mk)
 $(call inherit-product, vendor/omni/config/gsm.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
-$(call inherit-product, device/common/gps/gps_us_supl.mk)
 $(call inherit-product, device/meizu/mx4pro/device.mk)
 
 PRODUCT_NAME := omni_mx4pro
