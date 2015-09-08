@@ -112,10 +112,8 @@ lib/libtfa9890.so
 lib/libvcm.so
 lib/libvirtualdisplaymodule.so
 lib/libvirtualdisplay.so
-lib/omx/libOMX.Exynos.AAC.Decoder.so
 lib/omx/libOMX.Exynos.AVC.Decoder.so
 lib/omx/libOMX.Exynos.AVC.Encoder.so
-lib/omx/libOMX.Exynos.FLAC.Decoder.so
 lib/omx/libOMX.Exynos.HEVC.Decoder.so
 lib/omx/libOMX.Exynos.MP3.Decoder.so
 lib/omx/libOMX.Exynos.MPEG2.Decoder.so
