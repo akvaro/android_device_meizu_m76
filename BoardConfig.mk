@@ -52,6 +52,7 @@ WIFI_DRIVER_FW_PATH_STA     := "/etc/firmware/fw_bcmdhd.bin"
 # Bluetooth
 BOARD_HAVE_BLUETOOTH_BCM := true
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/meizu/mx4pro/bluetooth
+BOARD_BLUEDROID_VENDOR_CONF := device/meizu/mx4pro/bluetooth/vnd_mx4pro.txt
 
 TARGET_BOOTLOADER_BOARD_NAME := m76
 TARGET_BOARD_INFO_FILE := device/meizu/mx4pro/board-info.txt
