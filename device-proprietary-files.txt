@@ -22,10 +22,6 @@ etc/firmware/audience/cvqmodels/oemkw_NihaoMeizu.bin
 etc/firmware/audience/es705/audience-es705-fw.bin
 etc/firmware/audience/es705/audience-es705-vs.bin
 etc/firmware/BCM4335.hcd
-etc/firmware/fw_bcmdhd_apsta.bin
-etc/firmware/fw_bcmdhd.bin
-etc/firmware/fw_bcmdhd_p2p.bin
-etc/firmware/fw_bcmdhd_wls.bin
 etc/firmware/fw_mfgtest.bin
 etc/firmware/NZ_LTG_DKBI.bin
 etc/firmware/NZ_LTG_DL_M09_Y0_AI_SKL_Flash.bin
@@ -61,14 +57,16 @@ etc/tfa98xx/TFA9890_N1C3_2_1_1.patch
 etc/TTPCom_NRAM2_ABMM_WRITEABLE_DATA_CUC.gki
 etc/TTPCom_NRAM2_ABMM_WRITEABLE_DATA.gki
 etc/wifi/bcmdhd.cal
+lib/hw/camera.m76.so
 lib/hw/gralloc.exynos5.so
 lib/hw/hwcomposer.exynos5.so
 lib/hw/memtrack.exynos5.so
+lib/hw/nfc_nci.pn54x.default.so
+lib/hw/sensors.m76.so
 lib/libcaFingerPrintShared.so
 lib/libcsc.so
 lib/libdisplaymodule.so
 lib/libdisplay.so
-lib/libearsmart.so
 lib/libexynoscamera.so
 lib/libexynosgscaler.so
 lib/libExynosHWCService.so
@@ -95,6 +93,7 @@ lib/libmarvell-ril.so
 lib/libMcClient.so
 lib/libmcode_image.so
 lib/libMcRegistry.so
+lib/libmeizucamera.so
 lib/libmpp.so
 lib/libmsc.so
 lib/libmtel.so
@@ -109,7 +108,7 @@ lib/libsimal.so
 lib/libskia_hw_interface.so
 lib/libskia_private.so
 lib/libstagefrighthw.so
-lib/libtfa9890.so
+lib/libtiff.so
 lib/libvcm.so
 lib/libvirtualdisplaymodule.so
 lib/libvirtualdisplay.so
