@@ -21,6 +21,7 @@ PRODUCT_NAME := omni_mx4pro
 PRODUCT_DEVICE := mx4pro
 PRODUCT_BRAND := meizu
 PRODUCT_MANUFACTURER := Meizu
-PRODUCT_MODEL := mx4pro
+PRODUCT_MODEL := MX4 Pro
 
 $(call inherit-product-if-exists, vendor/meizu/mx4pro/device-vendor.mk)
+$(call inherit-product-if-exists, vendor/meizu/mx4pro/additional-files.mk)

@@ -75,9 +75,6 @@ PRODUCT_PACKAGES += \
     lights.m76
 
 PRODUCT_PACKAGES += \
-    setup_fs
-
-PRODUCT_PACKAGES += \
     clatd \
     clatd.conf
 
@@ -123,3 +120,12 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.bluetooth_le.xml:system/etc/permissions/android.hardware.bluetooth_le.xml \
     frameworks/native/data/etc/android.hardware.telephony.cdma.xml:system/etc/permissions/android.hardware.telephony.cdma.xml \
     frameworks/native/data/etc/android.hardware.ethernet.xml:system/etc/permissions/android.hardware.ethernet.xml
+
+# MTP, ADB
+ifeq ($(TARGET_BUILD_VARIANT),user)
+  PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.usb.config=mtp
+else
+  PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.usb.config=mtp,adb
+endif

@@ -46,8 +46,8 @@ BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_$(BOARD_WLAN_DEVICE)
 BOARD_HOSTAPD_DRIVER        := NL80211
 BOARD_HOSTAPD_PRIVATE_LIB   := lib_driver_cmd_$(BOARD_WLAN_DEVICE)
 WIFI_DRIVER_FW_PATH_PARAM   := "/sys/module/bcmdhd/parameters/firmware_path"
-WIFI_DRIVER_FW_PATH_AP      := "/etc/firmware/fw_bcmdhd_apsta.bin"
-WIFI_DRIVER_FW_PATH_STA     := "/etc/firmware/fw_bcmdhd.bin"
+WIFI_DRIVER_FW_PATH_AP      := "/system/vendor/firmware/fw_bcmdhd_apsta.bin"
+WIFI_DRIVER_FW_PATH_STA     := "/system/vendor/firmware/fw_bcmdhd.bin"
 
 # Bluetooth
 BOARD_HAVE_BLUETOOTH_BCM := true
@@ -89,3 +89,5 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 # Assert
 TARGET_OTA_ASSERT_DEVICE := mx4pro,m76
 
+# Releasetools
+TARGET_RELEASETOOLS_EXTENSIONS := device/meizu/mx4pro
