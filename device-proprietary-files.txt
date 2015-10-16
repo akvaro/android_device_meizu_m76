@@ -3,11 +3,9 @@ app/mcRegistry/05020000000000000000000000000000.tabin
 app/mcRegistry/ffffffffffff00000000000000000001.tabin
 app/mcRegistry/ffffffffffff00000000000000000002.tabin
 bin/atserver_lite
-bin/board_info
 bin/cploadserver
 bin/eeh_server
 bin/gpsd
-bin/gpslogd
 bin/gxFpDaemon
 bin/immvibed
 bin/mcDriverDaemon
@@ -17,12 +15,9 @@ bin/nvmserver
 bin/simal
 etc/firmware/audience/cvqmodels/adnc_cvq_detection_bkg.bin
 etc/firmware/audience/cvqmodels/adnc_cvq_detection_bkg_w_hdrs.bin
-etc/firmware/audience/cvqmodels/adnc_cvq_training_bkg.bin
-etc/firmware/audience/cvqmodels/oemkw_NihaoMeizu.bin
 etc/firmware/audience/es705/audience-es705-fw.bin
 etc/firmware/audience/es705/audience-es705-vs.bin
 etc/firmware/BCM4335.hcd
-etc/firmware/fw_mfgtest.bin
 etc/firmware/NZ_LTG_DKBI.bin
 etc/firmware/NZ_LTG_DL_M09_Y0_AI_SKL_Flash.bin
 etc/firmware/NZ_LTG_DL_MEIZU_HSIC.bin
@@ -98,10 +93,6 @@ lib/libmpp.so
 lib/libmsc.so
 lib/libmtel.so
 lib/libopencv_java.so
-lib/libp61-jcop-kit.so
-lib/libp61_spi_jni.so
-lib/libp61-spi.so
-lib/libPerfScheduler.so
 lib/libpparam.so
 lib/libril.so
 lib/libsimal.so
