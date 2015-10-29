@@ -86,11 +86,9 @@ lib/libion.so
 lib/libload_lib.so
 lib/libmarvell-ril.so
 lib/libMcClient.so
-lib/libmcode_image.so
 lib/libMcRegistry.so
 lib/libmeizucamera.so
 lib/libmpp.so
-lib/libmsc.so
 lib/libmtel.so
 lib/libopencv_java.so
 lib/libpparam.so
