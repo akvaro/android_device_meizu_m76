@@ -16,9 +16,8 @@
 #
 DEVICE_PACKAGE_OVERLAYS := device/meizu/mx4pro/overlay
 
-$(call inherit-product, frameworks/native/build/phone-xxhdpi-2048-dalvik-heap.mk)
-
-$(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-2048-hwui-memory.mk)
+$(call inherit-product, frameworks/native/build/phone-xxxhdpi-3072-dalvik-heap.mk)
+$(call inherit-product, frameworks/native/build/phone-xxxhdpi-3072-hwui-memory.mk)
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.opengles.version=196608
