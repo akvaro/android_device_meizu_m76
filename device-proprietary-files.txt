@@ -5,8 +5,6 @@ app/mcRegistry/ffffffffffff00000000000000000002.tabin
 bin/atserver_lite
 bin/cploadserver
 bin/eeh_server
-bin/gpsd
-bin/gxFpDaemon
 bin/immvibed
 bin/mcDriverDaemon
 bin/modem_monitor
@@ -59,7 +57,6 @@ lib/libmtel.so
 lib/libpparam.so
 lib/libril.so
 lib/libsimal.so
-lib/libstagefrighthw.so
 lib/libstlport.so
 lib/libvcm.so
 vendor/firmware/73BIEB1.img
@@ -100,5 +97,4 @@ vendor/lib/egl/gpr_list.cfg
 vendor/lib/egl/libGLES_mali.so
 vendor/lib/libmalicore.bc
 vendor/lib/libRSDriverArm.so
-vendor/lib/libsfb_hal.so
 vendor/lib/mediadrm/libdrmclearkeyplugin.so
