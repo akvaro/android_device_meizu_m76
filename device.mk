@@ -28,7 +28,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # LTE, CDMA, GSM/WCDMA
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.telephony.default_network=10 \
+    ro.telephony.default_network=21 \
     telephony.lteOnCdmaDevice=1
 
 # WiFi
@@ -45,10 +45,6 @@ PRODUCT_PACKAGES := \
 $(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/firmware/bcm4339/device-bcm.mk)
 
 # GPS
-PRODUCT_PACKAGES += \
-    gps.default \
-    flp.default
-
 PRODUCT_COPY_FILES += \
     device/meizu/mx4pro/gps.conf:system/etc/gps.conf \
     device/meizu/mx4pro/gpsconfig.xml:system/etc/gpsconfig.xml
@@ -121,10 +117,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.ethernet.xml:system/etc/permissions/android.hardware.ethernet.xml
 
 # MTP, ADB
-ifeq ($(TARGET_BUILD_VARIANT),user)
-  PRODUCT_PROPERTY_OVERRIDES += \
-    persist.sys.usb.config=mtp
-else
-  PRODUCT_PROPERTY_OVERRIDES += \
-    persist.sys.usb.config=mtp,adb
-endif
+PRODUCT_PROPERTY_OVERRIDES += \
+  persist.sys.usb.config=mtp
+
