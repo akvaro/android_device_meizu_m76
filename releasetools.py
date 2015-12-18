@@ -29,7 +29,7 @@ def FullOTA_InstallEnd(info):
   mounted = False
   newscript = []
   for cmd in info.script.script:
-    if not "boot.img" in cmd:
+    if not ("boot.img" in cmd or "unmount" in cmd):
       if cmd.find("format") == 0:
         newscript.append('run_program("/sbin/sh", "-c", "/sbin/rm -rf /system/*");')
       elif cmd.find("mount") == 0:
