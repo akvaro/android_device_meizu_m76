@@ -1,5 +1,4 @@
 #
-# Copyright (C) 2014 The Android Open-Source Project
 # Copyright (C) 2015 Tatsuyuki Ishi
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,15 +18,16 @@ DEVICE_PACKAGE_OVERLAYS := device/meizu/mx4pro/overlay
 $(call inherit-product, frameworks/native/build/phone-xxxhdpi-3072-dalvik-heap.mk)
 $(call inherit-product, frameworks/native/build/phone-xxxhdpi-3072-hwui-memory.mk)
 
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.opengles.version=196608
+PRODUCT_AAPT_CONFIG := normal
+PRODUCT_AAPT_PREF_CONFIG := xxxhdpi
+PRODUCT_AAPT_PREBUILT_DPI := xxhdpi xxhdpi xhdpi hdpi
 
-# Radio
 PRODUCT_PROPERTY_OVERRIDES += \
-    rild.libpath=/system/lib/libmarvell-ril.so
+    ro.opengles.version=196609
 
-# LTE, CDMA, GSM/WCDMA
+# RIL
 PRODUCT_PROPERTY_OVERRIDES += \
+    rild.libpath=/system/lib/libmarvell-ril.so \
     ro.telephony.default_network=21 \
     telephony.lteOnCdmaDevice=1
 
@@ -35,7 +35,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     wifi.interface=wlan0
 
-PRODUCT_PACKAGES := \
+PRODUCT_PACKAGES += \
     libwpa_client \
     hostapd \
     dhcpcd.conf \
@@ -51,6 +51,7 @@ PRODUCT_COPY_FILES += \
 
 # NFC
 PRODUCT_PACKAGES += \
+    nfc_nci.exynos5 \
     Nfc \
     NfcNci \
     Tag \
@@ -79,18 +80,29 @@ PRODUCT_COPY_FILES += \
 
 # Audio
 PRODUCT_COPY_FILES += \
-    device/meizu/mx4pro/audio_effects.conf:system/vendor/etc/audio_effects.conf \
+    frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:system/etc/media_codecs_google_audio.xml \
+    frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:system/etc/media_codecs_google_telephony.xml \
+    frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:system/etc/media_codecs_google_video.xml  \
+    device/meizu/mx4pro/audio_effects.conf:system/etc/audio_effects.conf \
     device/meizu/mx4pro/audio_policy.conf:system/etc/audio_policy.conf \
     device/meizu/mx4pro/mixer_paths.xml:system/etc/mixer_paths.xml \
     device/meizu/mx4pro/media_codecs.xml:system/etc/media_codecs.xml \
     device/meizu/mx4pro/media_profiles.xml:system/etc/media_profiles.xml
 
 PRODUCT_PACKAGES += \
+    audio.primary.m76 \
     audio.a2dp.default \
     audio.usb.default \
     audio.r_submix.default
 
-# Permissions
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.config.vc_call_vol_steps=15
+
+# Camera
+PRODUCT_PACKAGES += \
+    camera.m76
+
+# Features
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml \
     frameworks/native/data/etc/android.hardware.camera.flash-autofocus.xml:system/etc/permissions/android.hardware.camera.flash-autofocus.xml \
@@ -116,7 +128,22 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.cdma.xml:system/etc/permissions/android.hardware.telephony.cdma.xml \
     frameworks/native/data/etc/android.hardware.ethernet.xml:system/etc/permissions/android.hardware.ethernet.xml
 
-# MTP, ADB
-PRODUCT_PROPERTY_OVERRIDES += \
-  persist.sys.usb.config=mtp
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    persist.sys.usb.config=mtp
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    dalvik.vm.dex2oat-filter=speed \
+    dalvik.vm.dex2oat-swap=false
+
+# Shim libraries
+PRODUCT_PACKAGES += \
+    libshim_icu53 \
+    libshim_gps \
+    libshim_ril
+
+# TWRP
+PRODUCT_COPY_FILES += device/meizu/mx4pro/twrp.fstab:recovery/root/etc/twrp.fstab
+
+# SLSI include
+$(call inherit-product, hardware/samsung_slsi-cm/exynos5/exynos5.mk)
+$(call inherit-product, hardware/samsung_slsi-cm/exynos5430/exynos5430.mk)
