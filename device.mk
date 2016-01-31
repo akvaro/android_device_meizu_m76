@@ -20,7 +20,7 @@ $(call inherit-product, frameworks/native/build/phone-xxxhdpi-3072-hwui-memory.m
 
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxxhdpi
-PRODUCT_AAPT_PREBUILT_DPI := xxhdpi xxhdpi xhdpi hdpi
+PRODUCT_AAPT_PREBUILT_DPI := xxxhdpi xxhdpi xhdpi hdpi
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.opengles.version=196609
