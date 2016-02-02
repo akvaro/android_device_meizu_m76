@@ -47,6 +47,9 @@ BOARD_HAVE_BLUETOOTH_BCM := true
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/meizu/mx4pro/bluetooth
 BOARD_BLUEDROID_VENDOR_CONF := device/meizu/mx4pro/bluetooth/vnd_mx4pro.txt
 
+# RIL
+BOARD_PROVIDES_LIBRIL := true
+
 # NFC
 NFC_NXP_CHIP_TYPE := PN547C2
 
