@@ -17,6 +17,12 @@ OVERRIDE_RS_DRIVER := libRSDriverArm.so
 MAX_EGL_CACHE_KEY_SIZE := 12*1024
 MAX_EGL_CACHE_SIZE := 2048*1024
 
+# frameworks/native/services/surfaceflinger
+# Android keeps 2 surface buffers at all time in case the hwcomposer
+# misses the time to swap buffers (in cases where it takes 16ms or
+# less). Use 3 to avoid timing issues.
+NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
+
 # Enable dex-preoptimization to speed up first boot sequence
 ifeq ($(HOST_OS),linux)
   ifeq ($(WITH_DEXPREOPT),)
