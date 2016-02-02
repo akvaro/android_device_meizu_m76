@@ -6,7 +6,6 @@ bin/board_info
 bin/cploadserver
 bin/eeh_server
 bin/gpsd
-bin/modem_monitor
 bin/nvmserver
 etc/firmware/audience/cvqmodels/adnc_cvq_detection_bkg.bin
 etc/firmware/audience/cvqmodels/adnc_cvq_detection_bkg_w_hdrs.bin
