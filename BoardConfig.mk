@@ -1,7 +1,7 @@
 USE_CAMERA_STUB := true
 
 # inherit from the proprietary version
--include vendor/meizu/mx4pro/BoardConfigVendor.mk
+-include vendor/meizu/m76/BoardConfigVendor.mk
 
 TARGET_ARCH := arm
 TARGET_NO_BOOTLOADER := true
@@ -18,7 +18,7 @@ TARGET_USE_QCOM_BIONIC_OPTIMIZATION := true
 OVERRIDE_RS_DRIVER := libRSDriverArm.so
 
 USE_OPENGL_RENDERER := true
-BOARD_EGL_CFG := device/meizu/mx4pro/egl.cfg
+BOARD_EGL_CFG := device/meizu/m76/egl.cfg
 BOARD_USES_ALSA_AUDIO := true
 MAX_EGL_CACHE_KEY_SIZE := 12*1024
 MAX_EGL_CACHE_SIZE := 2048*1024
@@ -51,22 +51,22 @@ WIFI_DRIVER_FW_PATH_STA     := "/system/vendor/firmware/fw_bcmdhd.bin"
 
 # Bluetooth
 BOARD_HAVE_BLUETOOTH_BCM := true
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/meizu/mx4pro/bluetooth
-BOARD_BLUEDROID_VENDOR_CONF := device/meizu/mx4pro/bluetooth/vnd_mx4pro.txt
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/meizu/m76/bluetooth
+BOARD_BLUEDROID_VENDOR_CONF := device/meizu/m76/bluetooth/vnd_mx4pro.txt
 
 TARGET_BOOTLOADER_BOARD_NAME := m76
-TARGET_BOARD_INFO_FILE := device/meizu/mx4pro/board-info.txt
+TARGET_BOARD_INFO_FILE := device/meizu/m76/board-info.txt
 
 TARGET_NO_RADIOIMAGE := true
-TARGET_PREBUILT_KERNEL := device/meizu/mx4pro/kernel
+TARGET_PREBUILT_KERNEL := device/meizu/m76/kernel
 BOARD_KERNEL_CMDLINE := 
 BOARD_KERNEL_BASE := 0x26000000
 BOARD_KERNEL_PAGESIZE := 2048
-BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x26000000 --tags_offset 0x00000100 --dt device/meizu/mx4pro/dt.img
+BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x26000000 --tags_offset 0x00000100 --dt device/meizu/m76/dt.img
 KERNEL_EXFAT_MODULE_NAME := "exfat"
 
 # Recovery
-TARGET_RECOVERY_FSTAB := device/meizu/mx4pro/recovery.fstab
+TARGET_RECOVERY_FSTAB := device/meizu/m76/recovery.fstab
 RECOVERY_FSTAB_VERSION := 2
 
 TARGET_BOOTANIMATION_SIZE := 2560x1440
@@ -90,4 +90,4 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 TARGET_OTA_ASSERT_DEVICE := mx4pro,m76
 
 # Releasetools
-TARGET_RELEASETOOLS_EXTENSIONS := device/meizu/mx4pro
+TARGET_RELEASETOOLS_EXTENSIONS := device/meizu/m76
