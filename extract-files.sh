@@ -2,7 +2,7 @@
 
 export VENDOR=meizu
 export DEVICE_VENDOR=meizu
-export DEVICE=mx4pro
+export DEVICE=m76
 
 # Check to see if the user passed a folder in to extract from rather than adb pull
 if [ $# -eq 1 ]; then
