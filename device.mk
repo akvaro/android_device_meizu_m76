@@ -14,7 +14,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-DEVICE_PACKAGE_OVERLAYS := device/meizu/mx4pro/overlay
+DEVICE_PACKAGE_OVERLAYS := device/meizu/m76/overlay
 
 $(call inherit-product, frameworks/native/build/phone-xxhdpi-2048-dalvik-heap.mk)
 
@@ -51,8 +51,8 @@ PRODUCT_PACKAGES += \
     flp.default
 
 PRODUCT_COPY_FILES += \
-    device/meizu/mx4pro/gps.conf:system/etc/gps.conf \
-    device/meizu/mx4pro/gpsconfig.xml:system/etc/gpsconfig.xml
+    device/meizu/m76/gps.conf:system/etc/gps.conf \
+    device/meizu/m76/gpsconfig.xml:system/etc/gpsconfig.xml
 
 # NFC
 PRODUCT_PACKAGES += \
@@ -65,11 +65,11 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.nfc.xml:system/etc/permissions/android.hardware.nfc.xml \
     frameworks/native/data/etc/android.hardware.nfc.hce.xml:system/etc/permissions/android.hardware.nfc.hce.xml \
     frameworks/base/nfc-extras/com.android.nfc_extras.xml:system/etc/permissions/com.android.nfc_extras.xml \
-    device/meizu/mx4pro/libnfc-brcm.conf:system/etc/libnfc-brcm.conf \
-    device/meizu/mx4pro/libnfc-nxp.conf:system/etc/libnfc-nxp.conf \
-    device/meizu/mx4pro/nfcee_access.xml:system/etc/nfcee_access.xml \
-    device/meizu/mx4pro/nfcse_access.xml:system/etc/nfcse_access.xml \
-    device/meizu/mx4pro/nfcscc_access.xml:system/etc/nfcscc_access.xml
+    device/meizu/m76/libnfc-brcm.conf:system/etc/libnfc-brcm.conf \
+    device/meizu/m76/libnfc-nxp.conf:system/etc/libnfc-nxp.conf \
+    device/meizu/m76/nfcee_access.xml:system/etc/nfcee_access.xml \
+    device/meizu/m76/nfcse_access.xml:system/etc/nfcse_access.xml \
+    device/meizu/m76/nfcscc_access.xml:system/etc/nfcscc_access.xml
 
 PRODUCT_PACKAGES += \
     lights.m76
@@ -80,15 +80,15 @@ PRODUCT_PACKAGES += \
 
 # Keylayouts
 PRODUCT_COPY_FILES += \
-    device/meizu/mx4pro/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl
+    device/meizu/m76/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl
 
 # Audio
 PRODUCT_COPY_FILES += \
-    device/meizu/mx4pro/audio_effects.conf:system/vendor/etc/audio_effects.conf \
-    device/meizu/mx4pro/audio_policy.conf:system/etc/audio_policy.conf \
-    device/meizu/mx4pro/mixer_paths.xml:system/etc/mixer_paths.xml \
-    device/meizu/mx4pro/media_codecs.xml:system/etc/media_codecs.xml \
-    device/meizu/mx4pro/media_profiles.xml:system/etc/media_profiles.xml
+    device/meizu/m76/audio_effects.conf:system/vendor/etc/audio_effects.conf \
+    device/meizu/m76/audio_policy.conf:system/etc/audio_policy.conf \
+    device/meizu/m76/mixer_paths.xml:system/etc/mixer_paths.xml \
+    device/meizu/m76/media_codecs.xml:system/etc/media_codecs.xml \
+    device/meizu/m76/media_profiles.xml:system/etc/media_profiles.xml
 
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
