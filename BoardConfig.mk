@@ -77,7 +77,7 @@ TW_ALWAYS_RMRF := true
 TW_NO_REBOOT_BOOTLOADER := true
 DEVICE_RESOLUTION := 1080x1920
 TW_MAX_BRIGHTNESS := 1680
-PRODUCT_COPY_FILES += device/meizu/mx4pro/twrp.fstab:recovery/root/etc/twrp.fstab
+PRODUCT_COPY_FILES += device/meizu/m76/twrp.fstab:recovery/root/etc/twrp.fstab
 
 TARGET_USERIMAGES_USE_EXT4 := true
 BOARD_BOOTIMAGE_PARTITION_SIZE := 8388608
