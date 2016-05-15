@@ -1,1 +1,1 @@
-add_lunch_combo omni_mx4pro-userdebug
+add_lunch_combo cm_m76-userdebug
