@@ -1,2 +1,14 @@
 [
+ {
+        "repository": "android_packages_apps_SamsungServiceMode",
+        "target_path": "packages/apps/SamsungServiceMode"
+    },
+    {
+        "repository": "akvaro/android_hardware_samsung_slsi_exynos5",
+        "target_path": "hardware/meizu/exynos5"
+    },
+    {
+        "repository": "akvaro/android_kernel_meizu_mx4pro",
+        "target_path": "kernel/meizu/m76"
+    }
 ]
