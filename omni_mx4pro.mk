@@ -12,12 +12,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-$(call inherit-product, vendor/omni/config/common.mk)
-$(call inherit-product, vendor/omni/config/gsm.mk)
+$(call inherit-product, vendor/cm/config/common.mk)
+$(call inherit-product, vendor/cm/config/gsm.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
-$(call inherit-product, device/meizu/mx4pro/device.mk)
+$(call inherit-product, device/meizu/m76/device.mk)
 
-PRODUCT_NAME := omni_mx4pro
+PRODUCT_NAME := cm_mx4pro
 PRODUCT_DEVICE := mx4pro
 PRODUCT_BRAND := meizu
 PRODUCT_MANUFACTURER := Meizu
