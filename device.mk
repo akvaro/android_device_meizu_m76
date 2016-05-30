@@ -13,7 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-DEVICE_PACKAGE_OVERLAYS := device/meizu/mx4pro/overlay
+DEVICE_PACKAGE_OVERLAYS := device/meizu/m76/overlay
 
 $(call inherit-product, frameworks/native/build/phone-xxxhdpi-3072-dalvik-heap.mk)
 $(call inherit-product, frameworks/native/build/phone-xxxhdpi-3072-hwui-memory.mk)
@@ -46,8 +46,8 @@ $(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/firmware/bcm4339
 
 # GPS
 PRODUCT_COPY_FILES += \
-    device/meizu/mx4pro/gps.conf:system/etc/gps.conf \
-    device/meizu/mx4pro/gpsconfig.xml:system/etc/gpsconfig.xml
+    device/meizu/m76/gps.conf:system/etc/gps.conf \
+    device/meizu/m76/gpsconfig.xml:system/etc/gpsconfig.xml
 
 # NFC
 PRODUCT_PACKAGES += \
@@ -61,11 +61,11 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.nfc.xml:system/etc/permissions/android.hardware.nfc.xml \
     frameworks/native/data/etc/android.hardware.nfc.hce.xml:system/etc/permissions/android.hardware.nfc.hce.xml \
     frameworks/base/nfc-extras/com.android.nfc_extras.xml:system/etc/permissions/com.android.nfc_extras.xml \
-    device/meizu/mx4pro/libnfc-brcm.conf:system/etc/libnfc-brcm.conf \
-    device/meizu/mx4pro/libnfc-nxp.conf:system/etc/libnfc-nxp.conf \
-    device/meizu/mx4pro/nfcee_access.xml:system/etc/nfcee_access.xml \
-    device/meizu/mx4pro/nfcse_access.xml:system/etc/nfcse_access.xml \
-    device/meizu/mx4pro/nfcscc_access.xml:system/etc/nfcscc_access.xml
+    device/meizu/m76/libnfc-brcm.conf:system/etc/libnfc-brcm.conf \
+    device/meizu/m76/libnfc-nxp.conf:system/etc/libnfc-nxp.conf \
+    device/meizu/m76/nfcee_access.xml:system/etc/nfcee_access.xml \
+    device/meizu/m76/nfcse_access.xml:system/etc/nfcse_access.xml \
+    device/meizu/m76/nfcscc_access.xml:system/etc/nfcscc_access.xml
 
 PRODUCT_PACKAGES += \
     lights.m76
@@ -76,18 +76,18 @@ PRODUCT_PACKAGES += \
 
 # Keylayouts
 PRODUCT_COPY_FILES += \
-    device/meizu/mx4pro/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl
+    device/meizu/m76/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl
 
 # Audio
 PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:system/etc/media_codecs_google_audio.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:system/etc/media_codecs_google_telephony.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:system/etc/media_codecs_google_video.xml  \
-    device/meizu/mx4pro/audio_effects.conf:system/etc/audio_effects.conf \
-    device/meizu/mx4pro/audio_policy.conf:system/etc/audio_policy.conf \
-    device/meizu/mx4pro/mixer_paths.xml:system/etc/mixer_paths.xml \
-    device/meizu/mx4pro/media_codecs.xml:system/etc/media_codecs.xml \
-    device/meizu/mx4pro/media_profiles.xml:system/etc/media_profiles.xml
+    device/meizu/m76/audio_effects.conf:system/etc/audio_effects.conf \
+    device/meizu/m76/audio_policy.conf:system/etc/audio_policy.conf \
+    device/meizu/m76/mixer_paths.xml:system/etc/mixer_paths.xml \
+    device/meizu/m76/media_codecs.xml:system/etc/media_codecs.xml \
+    device/meizu/m76/media_profiles.xml:system/etc/media_profiles.xml
 
 PRODUCT_PACKAGES += \
     audio.primary.m76 \
@@ -100,7 +100,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    camera.m76
+    camera.exynos5
 
 # Features
 PRODUCT_COPY_FILES += \
@@ -142,8 +142,8 @@ PRODUCT_PACKAGES += \
     libshim_ril
 
 # TWRP
-PRODUCT_COPY_FILES += device/meizu/mx4pro/twrp.fstab:recovery/root/etc/twrp.fstab
+PRODUCT_COPY_FILES += device/meizu/m76/twrp.fstab:recovery/root/etc/twrp.fstab
 
 # SLSI include
-$(call inherit-product, hardware/samsung_slsi-cm/exynos5/exynos5.mk)
-$(call inherit-product, hardware/samsung_slsi-cm/exynos5430/exynos5430.mk)
+$(call inherit-product, hardware/samsung_slsi/exynos5/exynos5.mk)
+
