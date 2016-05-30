@@ -13,6 +13,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+# Release name
+PRODUCT_RELEASE_NAME := m76
+
 DEVICE_PACKAGE_OVERLAYS := device/meizu/m76/overlay
 
 $(call inherit-product, frameworks/native/build/phone-xxxhdpi-3072-dalvik-heap.mk)
