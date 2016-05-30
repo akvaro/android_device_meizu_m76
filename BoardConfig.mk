@@ -1,5 +1,5 @@
 # inherit from the proprietary version
--include vendor/meizu/mx4pro/BoardConfigVendor.mk
+-include vendor/meizu/m76/BoardConfigVendor.mk
 
 TARGET_ARCH := arm
 TARGET_BOARD_PLATFORM := exynos5
@@ -44,8 +44,8 @@ WIFI_DRIVER_FW_PATH_STA     := "/system/vendor/firmware/fw_bcmdhd.bin"
 
 # Bluetooth
 BOARD_HAVE_BLUETOOTH_BCM := true
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/meizu/mx4pro/bluetooth
-BOARD_BLUEDROID_VENDOR_CONF := device/meizu/mx4pro/bluetooth/vnd_mx4pro.txt
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/meizu/m76/bluetooth
+BOARD_BLUEDROID_VENDOR_CONF := device/meizu/m76/bluetooth/vnd_mx4pro.txt
 
 # RIL
 BOARD_PROVIDES_LIBRIL := true
@@ -54,7 +54,7 @@ BOARD_PROVIDES_LIBRIL := true
 NFC_NXP_CHIP_TYPE := PN547C2
 
 TARGET_BOOTLOADER_BOARD_NAME := m76
-TARGET_BOARD_INFO_FILE := device/meizu/mx4pro/board-info.txt
+TARGET_BOARD_INFO_FILE := device/meizu/m76/board-info.txt
 
 TARGET_NO_RADIOIMAGE := true
 BOARD_KERNEL_CMDLINE := console=ttyFIQ2,115200 vmalloc=512M ess_setup=0x26000000 ramoops_setup reset_reason_setup noexec=on earlyprintk no_console_suspend
@@ -63,11 +63,11 @@ BOARD_KERNEL_PAGESIZE := 2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x26000000 --tags_offset 0x00000100
 KERNEL_EXFAT_MODULE_NAME := "exfat"
 
-TARGET_KERNEL_SOURCE := kernel/meizu/mx4pro
-TARGET_KERNEL_CONFIG := omni_mx4pro_defconfig
+TARGET_KERNEL_SOURCE := kernel/meizu/m76
+TARGET_KERNEL_CONFIG := mx4pro_defconfig
 
 # Include path
-TARGET_SPECIFIC_HEADER_PATH := device/meizu/mx4pro/include
+TARGET_SPECIFIC_HEADER_PATH := device/meizu/m76/include
 
 # SLSI
 BOARD_USES_VIRTUAL_DISPLAY := true
@@ -95,7 +95,7 @@ BOARD_BACK_CAMERA_SENSOR := SENSOR_NAME_IMX220
 BOARD_FRONT_CAMERA_SENSOR := SENSOR_NAME_OV5693
 
 # Recovery
-TARGET_RECOVERY_FSTAB := device/meizu/mx4pro/recovery.fstab
+TARGET_RECOVERY_FSTAB := device/meizu/m76/recovery.fstab
 RECOVERY_FSTAB_VERSION := 2
 
 TARGET_BOOTANIMATION_SIZE := 1440x814
@@ -119,4 +119,4 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 TARGET_OTA_ASSERT_DEVICE := mx4pro
 
 # Releasetools
-TARGET_RELEASETOOLS_EXTENSIONS := device/meizu/mx4pro
+TARGET_RELEASETOOLS_EXTENSIONS := device/meizu/m76
