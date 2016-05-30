@@ -13,8 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-# Release name
-PRODUCT_RELEASE_NAME := mx4pro
+
 
 DEVICE_PACKAGE_OVERLAYS := device/meizu/m76/overlay
 
