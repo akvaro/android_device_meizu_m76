@@ -13,7 +13,7 @@
 # limitations under the License.
 
 $(call inherit-product, vendor/cm/config/common.mk)
-$(call inherit-product, vendor/cm/config/gsm.mk)
+$(call inherit-product, vendor/cm/config/telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 $(call inherit-product, device/meizu/m76/device.mk)
 
@@ -23,5 +23,5 @@ PRODUCT_BRAND := meizu
 PRODUCT_MANUFACTURER := Meizu
 PRODUCT_MODEL := MX4 Pro
 
-$(call inherit-product-if-exists, vendor/meizu/mx4pro/device-vendor.mk)
-$(call inherit-product-if-exists, vendor/meizu/mx4pro/additional-files.mk)
+$(call inherit-product-if-exists, vendor/meizu/m76/device-vendor.mk)
+$(call inherit-product-if-exists, vendor/meizu/m76/additional-files.mk)
